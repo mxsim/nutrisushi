@@ -1,0 +1,38 @@
+<!-- sushi_description.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushi Description</title>
+  <link rel="stylesheet" href="styles/order_bot.css">
+</head>
+<body>
+  <div id="sushi-description">
+    <h1 id="sushi-name"></h1>
+    <img id="sushi-image" src="" alt="">
+    <p id="sushi-description"></p>
+    <p id="sushi-price"></p>
+  </div>
+
+  <script src="js/db.js"></script>
+  <script>
+    // Get the sushi name from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const sushiName = urlParams.get('sushi');
+
+    // Find the sushi item in the db
+    const sushi = sushis.find(item => item.name === sushiName);
+
+    // If sushi is found, display it
+    if (sushi) {
+      document.getElementById('sushi-name').textContent = sushi.name;
+      document.getElementById('sushi-image').src = sushi.image;
+      document.getElementById('sushi-description').textContent = sushi.description;
+      document.getElementById('sushi-price').textContent = `Price: ${sushi.price} USD`;
+    } else {
+      document.getElementById('sushi-description').textContent = 'Sushi not found';
+    }
+  </script>
+</body>
+</html>
