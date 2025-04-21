@@ -6,22 +6,18 @@
 
 
 
-
-
-
-
     <header class="header">
 
         <div class="header-content">
             <h1 class="logo">🍣 NutriSushi</h1>
-            <p class="slogan">Смак справжньої Японії</p>
+            <p class="slogan">Здорово жити незаборониш!</p>
         </div>
     </header>
 
     <nav class="categories">
         <div class="nav-container">
             <ul class="nav-list" id="mainCategories">
-                <li class="nav-item active" data-category="sushi">Суші</li>
+                <li class="nav-item" data-category="sushi">Суші</li>
                 <li class="nav-item" data-category="rolls">Роли</li>
                 <li class="nav-item" data-category="sets">Сети</li>
             </ul>
@@ -37,51 +33,126 @@
     </nav>
 
 
-
-
-
-
-
-
-
-
+    
 
     <main class="main-content">
         <div class="orders-container">
             <!-- Ліва частина - Список замовлень -->
-            <div class="orders-list">
-                <h2>В дорозі</h2>
-                
-                <div class="order-card">
-                    <div class="order-header">
-                        <span class="order-number">Замовлення #1</span>
-                        <span class="order-status">Через 50 хв</span>
-                    </div>
-                    <div class="dishes-scroll">
-                        <div class="dishes-container">
-                            <img src="dish.jpg" class="dish-thumb">
-                            <!-- Додаткові зображення -->
+            <div class="orders-sections">
+                <div class="orders-section">
+                    <h2>В дорозі</h2>
+                    
+                    <!-- Замовлення 1 -->
+                    <div class="order-card">
+                        <div class="order-header">
+                            <span class="order-number">Замовлення #1</span>
+                            <span class="order-status status-pending">Через 50 хв</span>
+                        </div>
+                        <div class="dishes-scroll">
+                            <div class="dishes-container">
+                                <img src="https://via.placeholder.com/60x60?text=Sushi1" class="dish-thumb">
+                                <img src="https://via.placeholder.com/60x60?text=Sushi2" class="dish-thumb">
+                                <img src="https://via.placeholder.com/60x60?text=Sushi3" class="dish-thumb">
+                                <img src="https://via.placeholder.com/60x60?text=Sushi4" class="dish-thumb">
+                                <img src="https://via.placeholder.com/60x60?text=Sushi5" class="dish-thumb">
+                            </div>
+                        </div>
+                        <div class="order-info">
+                            <p>Адреса: вул. Шевченка, 12</p>
+                            <p>Статус: Готується</p>
                         </div>
                     </div>
-                    <div class="order-info">
-                        <p>Адреса: вул. Шевченка, 12</p>
-                        <p>Статус: Готується</p>
+                    
+                    <!-- Замовлення 2 -->
+                    <div class="order-card">
+                        <div class="order-header">
+                            <span class="order-number">Замовлення #2</span>
+                            <span class="order-status">Доставлено</span>
+                        </div>
+                        <div class="dishes-scroll">
+                            <div class="dishes-container">
+                                <img src="https://via.placeholder.com/60x60?text=Roll1" class="dish-thumb">
+                                <img src="https://via.placeholder.com/60x60?text=Roll2" class="dish-thumb">
+                            </div>
+                        </div>
+                        <div class="order-info">
+                            <p>Адреса: вул. Грушевського, 5</p>
+                            <p>Статус: Отримано</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Замовлення 3 -->
+                    <div class="order-card">
+                        <div class="order-header">
+                            <span class="order-number">Замовлення #3</span>
+                            <span class="order-status">Заберіть замовлення!</span>
+                        </div>
+                        <div class="dishes-scroll">
+                            <div class="dishes-container">
+                                <img src="https://via.placeholder.com/60x60?text=Set1" class="dish-thumb">
+                                <img src="https://via.placeholder.com/60x60?text=Set2" class="dish-thumb">
+                                <img src="https://via.placeholder.com/60x60?text=Set3" class="dish-thumb">
+                            </div>
+                        </div>
+                        <div class="order-info">
+                            <p>Адреса: вул. Хрещатик, 15</p>
+                            <p>Статус: Очікує в ресторані</p>
+                        </div>
                     </div>
                 </div>
-
-                <h2>Збережені замовлення</h2>
-                <div class="order-card">
-                    <div class="order-header">
-                        <span class="order-number">Замовлення #2</span>
-                        <span class="order-status rejected">Відхилено</span>
-                    </div>
-                    <div class="dishes-scroll">
-                        <div class="dishes-container">
-                            <img src="dish.jpg" class="dish-thumb">
+                
+                <div class="orders-section">
+                    <h2>Збережені замовлення</h2>
+                    
+                    <!-- Замовлення 4 -->
+                    <div class="order-card">
+                        <div class="order-header">
+                            <span class="order-number">Замовлення #4</span>
+                            <span class="order-status status-rejected">Відхилено</span>
+                        </div>
+                        <div class="dishes-scroll">
+                            <div class="dishes-container">
+                                <img src="https://via.placeholder.com/60x60?text=Dish1" class="dish-thumb">
+                                <img src="https://via.placeholder.com/60x60?text=Dish2" class="dish-thumb">
+                            </div>
+                        </div>
+                        <div class="order-info">
+                            <p>Причина: Закінчились інгредієнти</p>
                         </div>
                     </div>
-                    <div class="order-info">
-                        <p>Причина: Закінчились інгредієнти</p>
+                    
+                    <!-- Замовлення 5 -->
+                    <div class="order-card">
+                        <div class="order-header">
+                            <span class="order-number">Замовлення #5</span>
+                            <span class="order-status">Чернетка</span>
+                        </div>
+                        <div class="dishes-scroll">
+                            <div class="dishes-container">
+                                <img src="https://via.placeholder.com/60x60?text=Temp1" class="dish-thumb">
+                                <img src="https://via.placeholder.com/60x60?text=Temp2" class="dish-thumb">
+                                <img src="https://via.placeholder.com/60x60?text=Temp3" class="dish-thumb">
+                            </div>
+                        </div>
+                        <div class="order-info">
+                            <p>Сума: ₴450</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Замовлення 6 -->
+                    <div class="order-card">
+                        <div class="order-header">
+                            <span class="order-number">Замовлення #6</span>
+                            <span class="order-status status-rejected">Відхилено</span>
+                        </div>
+                        <div class="dishes-scroll">
+                            <div class="dishes-container">
+                                <img src="https://via.placeholder.com/60x60?text=Item1" class="dish-thumb">
+                            </div>
+                        </div>
+                        <div class="order-info">
+                            <p>Причина: Немає в наявності</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,11 +163,11 @@
                 <button class="add-dish-btn">+ Додати страву</button>
                 
                 <div class="selected-dishes">
-                    <!-- Приклад страви -->
+                    <!-- Приклад страви 1 -->
                     <div class="dish-item">
                         <div class="quantity-badge">2</div>
                         <button class="remove-btn">×</button>
-                        <img src="dish.jpg" class="dish-thumb">
+                        <img src="https://via.placeholder.com/80x80?text=Sushi" class="dish-thumb">
                         <div class="dish-info">
                             <h3>Нігірі з тунцем</h3>
                             <div class="price-controls">
@@ -104,24 +175,67 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- Приклад страви 2 -->
+                    <div class="dish-item">
+                        <div class="quantity-badge">1</div>
+                        <button class="remove-btn">×</button>
+                        <img src="https://via.placeholder.com/80x80?text=Roll" class="dish-thumb">
+                        <div class="dish-info">
+                            <h3>Рол Філадельфія</h3>
+                            <div class="price-controls">
+                                <span>₴180</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Приклад страви 3 -->
+                    <div class="dish-item">
+                        <div class="quantity-badge">3</div>
+                        <button class="remove-btn">×</button>
+                        <img src="https://via.placeholder.com/80x80?text=Set" class="dish-thumb">
+                        <div class="dish-info">
+                            <h3>Сет "Сакура"</h3>
+                            <div class="price-controls">
+                                <span>₴350</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Додаткові страви для демонстрації скролу -->
+                    <div class="dish-item">
+                        <div class="quantity-badge">1</div>
+                        <button class="remove-btn">×</button>
+                        <img src="https://via.placeholder.com/80x80?text=Dish1" class="dish-thumb">
+                        <div class="dish-info">
+                            <h3>Місо суп</h3>
+                            <div class="price-controls">
+                                <span>₴80</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dish-item">
+                        <div class="quantity-badge">2</div>
+                        <button class="remove-btn">×</button>
+                        <img src="https://via.placeholder.com/80x80?text=Dish2" class="dish-thumb">
+                        <div class="dish-info">
+                            <h3>Темпур</h3>
+                            <div class="price-controls">
+                                <span>₴110</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="order-footer">
+                    <div class="total-price">Всього: ₴1040</div>
                     <button class="submit-order">Надіслати замовлення</button>
                 </div>
             </div>
         </div>
     </main>
 
-
-
-
-
-
-
-
-
-    
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-links">

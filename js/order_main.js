@@ -1,3 +1,25 @@
+// Category Selection
+const mainCategories = document.querySelectorAll("#mainCategories .nav-item");
+const subCategories = document.getElementById("subCategories");
+
+mainCategories.forEach((category) => {
+  category.addEventListener("click", () => {
+    mainCategories.forEach((c) => c.classList.remove("active"));
+    category.classList.add("active");
+    subCategories.classList.add("show");
+  });
+});
+
+// Subcategory Selection
+const subNavItems = document.querySelectorAll(".sub-nav-item");
+subNavItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    subNavItems.forEach((i) => i.classList.remove("active"));
+    item.classList.add("active");
+    // Here you would filter the menu items
+  });
+});
+
 // Логіка для додавання/видалення страв
 document.querySelector(".add-dish-btn").addEventListener("click", () => {
   // Тут буде логіка вибору страв

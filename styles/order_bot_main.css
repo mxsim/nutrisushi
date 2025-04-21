@@ -1,0 +1,277 @@
+:root {
+    --primary: #e74c3c;
+    --secondary: #2ecc71;
+    --accent: #f1c40f;
+    --dark: #2c3e50;
+    --light: #ecf0f1;
+    --highlight: #e67e22;
+    --search-bg: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light);
+    min-height: 100vh;
+    display: block;
+    /* заміни flex на block */
+}
+
+/* Header */
+.header {
+    background: var(--dark);
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    /* instead of fixed */
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: var(--light);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.slogan {
+    color: var(--accent);
+    font-style: italic;
+}
+
+/* Categories */
+.categories {
+    background: var(--dark);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    overflow-x: auto;
+    padding: 0.5rem 0;
+}
+
+.nav-item {
+    color: var(--light);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+    white-space: nowrap;
+}
+
+.nav-item.active {
+    background: var(--primary);
+}
+
+/* Subcategories */
+.subcategories {
+    display: none;
+    background: var(--dark);
+    justify-content: center;
+}
+
+.subcategories.show {
+    display: flex;
+}
+
+.sub-nav-list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    overflow-x: auto;
+    padding: 0.5rem 0;
+}
+
+.sub-nav-item {
+    color: var(--light);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+    white-space: nowrap;
+}
+
+.sub-nav-item.active {
+    background: var(--highlight);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    margin: 20px auto 20px auto;
+    /* враховує висоту header та footer */
+    min-height: calc(100vh - 210px);
+    /* адаптивна висота */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* HEADER */
+.chat-header {
+    background: #4a90e2;
+    color: #fff;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* MESSAGES */
+.chat-messages {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.message {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.message.bot {
+    flex-direction: row;
+}
+
+.message.user {
+    flex-direction: row-reverse;
+}
+
+.message-icon img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.message-text {
+    max-width: 70%;
+    padding: 10px 14px;
+    border-radius: 14px;
+    position: relative;
+}
+
+.bot .message-text {
+    background: #e6f0ff;
+    color: #333;
+}
+
+.user .message-text {
+    background: #d0ffd0;
+    color: #333;
+}
+
+.timestamp {
+    font-size: 11px;
+    color: #888;
+    margin-top: 4px;
+    text-align: right;
+}
+
+/* INPUT */
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+
+.chat-input button {
+    padding: 0 16px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+    background: var(--dark);
+    color: var(--light);
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    /* instead of fixed */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.footer-link {
+    color: var(--light);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: var(--accent);
+}

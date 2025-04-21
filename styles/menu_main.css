@@ -21,15 +21,16 @@
         min-height: 100vh;
     }
 
-    /* Header */
-    .header {
-        background: var(--dark);
-        padding: 1rem;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 100;
-    }
+/* Header */
+.header {
+    background: var(--dark);
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    /* instead of fixed */
+    top: 0;
+    z-index: 100;
+}
 
     .header-content {
         display: flex;
@@ -113,6 +114,22 @@
     .sub-nav-item.active {
         background: var(--highlight);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* Main Content */
     .main-content {
@@ -363,16 +380,18 @@ color: var(--primary);
         font-weight: bold;
     }
 
+
 /* Footer */
-    .footer {
-        background: var(--dark);
-        color: var(--light);
-        padding: 2rem;
-        text-align: center;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
+.footer {
+    background: var(--dark);
+    color: var(--light);
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    /* instead of fixed */
+}
+
 
     .footer-content {
         max-width: 1200px;
